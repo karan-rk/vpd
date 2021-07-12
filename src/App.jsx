@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import Button from "@material-ui/core/Button";
 import { createTheme, ThemeProvider, Typography } from "@material-ui/core";
 import { useInView } from "react-hook-inview";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+
+import { motion, useAnimation } from "framer-motion";
 
 import "./css/main.css";
 import "react-alice-carousel/lib/alice-carousel.css";
