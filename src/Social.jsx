@@ -14,19 +14,23 @@ export function Social() {
   });
 
   const submit = () => {
-    respond(input)
-      .then(() => {
-        alert("your response has been recorded");
-        setInput({
-          name: "",
-          number: "",
-          email: "",
-          message: "",
+    if (input.name && input.number && input.email && input.message) {
+      respond(input)
+        .then(() => {
+          alert("your response has been recorded");
+          setInput({
+            name: "",
+            number: "",
+            email: "",
+            message: "",
+          });
+        })
+        .catch(() => {
+          alert("your response has failed to be recorded");
         });
-      })
-      .catch(() => {
-        alert("your response has failed to be recorded");
-      });
+    } else {
+      alert("enter all fields");
+    }
   };
 
   return (
