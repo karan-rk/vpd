@@ -224,7 +224,7 @@ function Work({ s, i }) {
 
 function Social() {
   return (
-    <div className="social">
+    <div className="social" id="contact">
       <Typography variant="h4">Contact us</Typography>
       <Typography paragraph>
         we would love to hear it from you on your query and Contact
