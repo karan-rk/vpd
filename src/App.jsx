@@ -25,18 +25,23 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/admin">
-            <Admin />
-          </Route>
-        </Switch>
-      </Router>
+      <Home />
     </ThemeProvider>
   );
+  // return (
+  //   <ThemeProvider theme={theme}>
+  //     <Router>
+  //       <Switch>
+  //         <Route path="/" exact>
+  //           <Home />
+  //         </Route>
+  //         <Route path="/admin">
+  //           <Admin />
+  //         </Route>
+  //       </Switch>
+  //     </Router>
+  //   </ThemeProvider>
+  // );
 }
 
 function Admin() {
