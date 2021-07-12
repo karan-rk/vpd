@@ -1,0 +1,5 @@
+body {
+  --background: #15123d;
+  background: var(--background);
+}
+/*# sourceMappingURL=main.css.map */
