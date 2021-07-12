@@ -1,6 +1,100 @@
 body {
     --background: #15123d;
+    color: whitesmoke;
     background: var(--background);
 }
 
-.app {}
+.app {
+    min-height: 100vh;
+
+    header {
+        padding: 20px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+        }
+    }
+}
+
+.about {
+    padding: 20px;
+
+}
+
+.featured {
+
+    // height: 50vh;
+    padding: 20px;
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+.services {
+    padding: 20px;
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.works {
+    padding: 20px;
+
+    .work-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    .work {
+        position: relative;
+
+        .info {
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            background: rgba(21, 18, 61, .5);
+
+            transition: opacity 200ms;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
