@@ -98,3 +98,20 @@ body {
         }
     }
 }
+
+.social {
+    padding: 20px;
+    background: black;
+
+    &>div {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+}

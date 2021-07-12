@@ -17,6 +17,7 @@
     "react-hook-inview": "^4.3.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-social-icons": "^5.5.1",
     "react-spring": "8.0.25",
     "react-ugh": "^1.0.6",
     "resize-observer-polyfill": "1.5.1",

@@ -1,9 +1,14 @@
 import React from "react";
 
 import Button from "@material-ui/core/Button";
-import { createTheme, ThemeProvider, Typography } from "@material-ui/core";
+import {
+  createTheme,
+  TextField,
+  ThemeProvider,
+  Typography,
+} from "@material-ui/core";
 import { useInView } from "react-hook-inview";
-
+import { SocialIcon } from "react-social-icons";
 import { motion, useAnimation } from "framer-motion";
 
 import "./css/main.css";
@@ -44,6 +49,7 @@ function Home() {
       <Featured />
       <Services />
       <Works />
+      <Social />
     </div>
   );
 }
@@ -212,6 +218,29 @@ function Work({ s, i }) {
           molestias odit, architecto fugit tenetur impedit!
         </Typography>
       </motion.div>
+    </div>
+  );
+}
+
+function Social() {
+  return (
+    <div className="social">
+      <Typography variant="h4">Contact us</Typography>
+      <Typography paragraph>
+        we would love to hear it from you on your query and Contact
+      </Typography>
+      <form action="POST">
+        <TextField margin="dense" variant="outlined" label="name" fullWidth />
+        <TextField margin="dense" variant="outlined" label="number" fullWidth />
+        <TextField margin="dense" variant="outlined" label="email" fullWidth />
+        <TextField variant="outlined" label="message" multiline fullWidth />
+      </form>
+      <div>
+        <SocialIcon className="sicon" url="https://instagram.com/" />
+        <SocialIcon className="sicon" url="https://www.linkedin.com/in/" />
+        <SocialIcon className="sicon" url="https://twitter.com/" />
+        <SocialIcon className="sicon" network="telegram" url="https://t.me/" />
+      </div>
     </div>
   );
 }
