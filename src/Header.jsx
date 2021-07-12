@@ -8,7 +8,7 @@ export function Header() {
     <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <motion.img
         animate={{ height: "50vh" }}
-        transition={{ delay: 4 }}
+        transition={{ delay: 2 }}
         src={logo}
         alt="logo" />
       <motion.nav initial={{ y: 10 }} animate={{ y: 0 }}>
