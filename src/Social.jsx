@@ -6,10 +6,27 @@ import { Button } from "@material-ui/core";
 import { respond } from "./api";
 
 export function Social() {
-  const [input, setInput] = useState({});
+  const [input, setInput] = useState({
+    name: "",
+    number: "",
+    email: "",
+    message: "",
+  });
 
   const submit = () => {
-    respond(input);
+    respond(input)
+      .then(() => {
+        alert("your response has been recorded");
+        setInput({
+          name: "",
+          number: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        alert("your response has failed to be recorded");
+      });
   };
 
   return (
@@ -28,6 +45,7 @@ export function Social() {
           margin="dense"
           variant="outlined"
           label="name"
+          value={input.name}
           fullWidth
         />
         <TextField
@@ -36,6 +54,7 @@ export function Social() {
               return { ...oi, number: e.target.value };
             });
           }}
+          value={input.number}
           margin="dense"
           variant="outlined"
           label="number"
@@ -47,6 +66,7 @@ export function Social() {
               return { ...oi, email: e.target.value };
             });
           }}
+          value={input.email}
           margin="dense"
           variant="outlined"
           label="email"
@@ -58,6 +78,7 @@ export function Social() {
               return { ...oi, message: e.target.value };
             });
           }}
+          value={input.message}
           variant="outlined"
           label="message"
           multiline
