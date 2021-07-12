@@ -13,7 +13,7 @@ import i5 from "./assets/s-5.jpg";
 import i6 from "./assets/s-6.jpg";
 import i7 from "./assets/s-7.jpg";
 import { Home } from "./Home";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+// import { HashRouter as Router, Switch, Route } from "react-router-dom";
 export const images = [i1, i2, i3, i4, i5, i6, i7];
 
 function App() {
