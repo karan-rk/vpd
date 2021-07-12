@@ -4,13 +4,8 @@ body {
   background: var(--background);
 }
 
-.app {
-  min-height: 100vh;
-}
-
 .app header {
   padding: 20px;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +23,7 @@ body {
 
 .app header img {
   width: 100%;
-  height: 80%;
+  height: 80vh;
   -o-object-fit: contain;
      object-fit: contain;
 }

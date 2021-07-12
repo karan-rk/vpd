@@ -57,7 +57,12 @@ function Home() {
 function Header() {
   return (
     <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <img src={logo} alt="logo" />
+      <motion.img
+        animate={{ height: "50vh" }}
+        transition={{ delay: 4 }}
+        src={logo}
+        alt="logo"
+      />
       <motion.nav initial={{ y: 10 }} animate={{ y: 0 }}>
         <Button href="#services">Services</Button>
         <Button href="#contact">Contact us</Button>
