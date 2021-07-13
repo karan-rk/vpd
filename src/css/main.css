@@ -130,4 +130,14 @@ body {
           flex-direction: column;
   max-width: 300px;
 }
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp span {
+  margin-left: 2px;
+}
 /*# sourceMappingURL=main.css.map */

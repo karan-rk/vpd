@@ -3,7 +3,6 @@ import { Typography } from "@material-ui/core";
 import { images } from "./App";
 import { Work } from "./Work";
 
-
 export function Works() {
   return (
     <div className="works" id="works">
@@ -11,7 +10,7 @@ export function Works() {
 
       <div className="work-grid">
         {images.map((s, i) => (
-          <Work {...{ s, i }} />
+          <Work {...{ s, i }} key={i} />
         ))}
       </div>
     </div>

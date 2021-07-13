@@ -13,6 +13,8 @@ import i5 from "./assets/s-5.jpg";
 import i6 from "./assets/s-6.jpg";
 import i7 from "./assets/s-7.jpg";
 import { Home } from "./Home";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import Fab from "@material-ui/core/Fab";
 // import { HashRouter as Router, Switch, Route } from "react-router-dom";
 export const images = [i1, i2, i3, i4, i5, i6, i7];
 
@@ -26,6 +28,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Home />
+      <Whatsapp />
     </ThemeProvider>
   );
   // return (
@@ -42,6 +45,22 @@ function App() {
   //     </Router>
   //   </ThemeProvider>
   // );
+}
+
+function Whatsapp() {
+  return (
+    <div className="whatsapp">
+      <Fab
+        href="https://wa.me/27722840005"
+        target="_blank"
+        style={{ background: "green" }}
+        variant="extended"
+      >
+        <WhatsAppIcon />
+        <span>Whatsapp</span>
+      </Fab>
+    </div>
+  );
 }
 
 // function Admin() {
