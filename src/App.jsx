@@ -58,12 +58,13 @@ function Whatsapp() {
       <Fab
         href="https://wa.me/27722840005"
         target="_blank"
-        style={{ background: "green" }}
+        style={{ background: "#14880c", color: "white" }}
         variant="extended"
       >
         <WhatsAppIcon />
         <span>Whatsapp</span>
       </Fab>
+      <span className="caption">get a quote asap!</span>
     </motion.div>
   );
 }
