@@ -15,6 +15,7 @@ import i7 from "./assets/s-7.jpg";
 import { Home } from "./Home";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import Fab from "@material-ui/core/Fab";
+import { motion } from "framer-motion";
 // import { HashRouter as Router, Switch, Route } from "react-router-dom";
 export const images = [i1, i2, i3, i4, i5, i6, i7];
 
@@ -49,7 +50,11 @@ function App() {
 
 function Whatsapp() {
   return (
-    <div className="whatsapp">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="whatsapp"
+    >
       <Fab
         href="https://wa.me/27722840005"
         target="_blank"
@@ -59,7 +64,7 @@ function Whatsapp() {
         <WhatsAppIcon />
         <span>Whatsapp</span>
       </Fab>
-    </div>
+    </motion.div>
   );
 }
 
